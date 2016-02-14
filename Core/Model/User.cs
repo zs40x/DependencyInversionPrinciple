@@ -1,7 +1,7 @@
 ﻿
-namespace UserEMailNotificationSender.Model
+namespace Core.Model
 {
-    class User
+    public class User
     {
         public User() { }
 

@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Core.Interfaces;
+using System;
 
-namespace UserEMailNotificationSender.Infrastucture
+namespace Infrastucture.Services
 {
-    class SMTPClient
+    public class SMTPClient : SendMail
     {
         public void sendMail(string recipient, string subject, string message)
         {

@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserEMailNotificationSender", "UserEMailNotificationSender\UserEMailNotificationSender.csproj", "{A599922A-A028-43B8-A845-7C73E83074C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{2B2221BD-375B-47E8-B7D0-1AB7A0D38262}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{162EF39C-810F-4A46-A42D-21AE01023A00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{A599922A-A028-43B8-A845-7C73E83074C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A599922A-A028-43B8-A845-7C73E83074C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A599922A-A028-43B8-A845-7C73E83074C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B2221BD-375B-47E8-B7D0-1AB7A0D38262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B2221BD-375B-47E8-B7D0-1AB7A0D38262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B2221BD-375B-47E8-B7D0-1AB7A0D38262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B2221BD-375B-47E8-B7D0-1AB7A0D38262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162EF39C-810F-4A46-A42D-21AE01023A00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162EF39C-810F-4A46-A42D-21AE01023A00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162EF39C-810F-4A46-A42D-21AE01023A00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162EF39C-810F-4A46-A42D-21AE01023A00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

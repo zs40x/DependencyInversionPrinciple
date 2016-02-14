@@ -1,11 +1,16 @@
-﻿using UserEMailNotificationSender.Infrastucture;
-using UserEMailNotificationSender.Model;
+﻿using Core.Interfaces;
+using Core.Model;
 
-namespace UserEMailNotificationSender.BL
+namespace Core.Services
 {
-    class SMTPNotificationSender
+    public class NotificationService
     {
-        SMTPClient smtpClient = new SMTPClient();
+        SendMail sendMail;
+
+        public NotificationService(SendMail _sendMail)
+        {
+            sendMail = _sendMail;
+        }
 
         public void sendNotificationForUser(User userToNotify)
         {
@@ -18,7 +23,7 @@ namespace UserEMailNotificationSender.BL
                 message += " -> Additional Information for Premium Users!";
             }
 
-            smtpClient.sendMail(userToNotify.EMailAddress, "Notification", message);
+            sendMail.sendMail(userToNotify.EMailAddress, "Notification", message);
         }
     }
 }

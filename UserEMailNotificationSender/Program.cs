@@ -1,16 +1,17 @@
-﻿using System;
-using UserEMailNotificationSender.BL;
-using UserEMailNotificationSender.Model;
+﻿using Core.Model;
+using Core.Services;
+using Infrastucture.Services;
+using System;
 
 namespace UserEMailNotificationSender
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             User aUser = new User("TheUser", "the_user@mail_service.com", false);
 
-            SMTPNotificationSender sender = new SMTPNotificationSender();
+            NotificationService sender = new NotificationService(new SMTPClient());
             sender.sendNotificationForUser(aUser);
 
 
